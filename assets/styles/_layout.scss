@@ -13,7 +13,7 @@ body {
 
 //класс общего контейнера, блоки оборачивать в него
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 12px;
 }
@@ -21,4 +21,27 @@ body {
 .main {
   background-color: $main-blue-color;
   color: $white-color;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.greeting__header {
+  color: $accent-blue-color;
+}
+
+.greeting__paragraph {
+  margin-top: 30px;
+  margin-right: 100px;
+  width: 600px;
+}
+
+.startbutton {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid $light-blue-color;
+  background-color: $dark-blue-color;
+  color: $accent-blue-color;
+  &:hover {
+    border-bottom: 2px solid $yellow-color;
+  }
 }
