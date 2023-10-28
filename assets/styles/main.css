@@ -26,7 +26,18 @@ body {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0 20px;
+}
+
+.header__container {
+  padding: 0 20px;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
 }
 
 .main {
@@ -54,7 +65,7 @@ body {
   color: rgb(0, 210, 233);
 }
 .startbutton:hover {
-  border-bottom: 2px solid rgb(255, 201, 79);
+  border-bottom-color: rgb(255, 201, 79);
   color: rgb(255, 255, 255);
 }
 
@@ -98,9 +109,17 @@ body {
   margin-top: 20px;
 }
 
+.collab {
+  padding: 20px;
+}
+.collab a {
+  margin-right: 20px;
+}
+
 .header {
   width: 100%;
   background-color: rgb(22, 29, 41);
+  border-bottom: 1px solid rgb(45, 59, 86);
 }
 
 .menu {
@@ -109,11 +128,6 @@ body {
   justify-content: left;
   align-items: center;
   color: rgb(160, 170, 190);
-}
-
-.header_logo {
-  width: 15%;
-  background-color: rgb(160, 170, 190);
 }
 
 .header_link {
@@ -128,8 +142,4 @@ body {
 .header_link:hover {
   color: rgb(229, 231, 235);
   border-bottom: 2px solid rgb(255, 201, 79);
-}
-
-.header_logo:hover {
-  background-color: rgb(229, 231, 235);
 }/*# sourceMappingURL=main.css.map */

@@ -2,6 +2,7 @@
   width: 100%;
 
   background-color: $dark-blue-color;
+  border-bottom: 1px solid $blue-color;
 }
 
 .menu {
@@ -12,12 +13,6 @@
   align-items: center;
 
   color: $grey-color;
-}
-
-.header_logo {
-  width: 15%;
-
-  background-color: $grey-color;
 }
 
 .header_link {
@@ -35,8 +30,4 @@
 .header_link:hover {
   color: $light-blue-color;
   border-bottom: 2px solid rgb(255, 201, 79);
-}
-
-.header_logo:hover {
-  background-color: $light-blue-color;
 }

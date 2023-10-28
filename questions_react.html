@@ -10,25 +10,33 @@
 
   <body>
     <header class="header">
-      <ul class="menu">
-        <li class="links__logo">
-          <a href="index.html"
-            ><img src="assets/images/logo.svg" alt="logo" class="header_logo"
-          /></a>
-        </li>
-        <li class="links__chapter links__chapter_html">
-          <a href="redirect_html.html" class="header_link">HTML</a>
-        </li>
-        <li class="links__chapter links__chapter_css">
-          <a href="redirect_css.html" class="header_link">CSS</a>
-        </li>
-        <li class="links__chapter links__chapter_js">
-          <a href="redirect_js.html" class="header_link">JavaScript</a>
-        </li>
-        <li class="links__chapter links__chapter_react">
-          <a href="redirect_react.html" class="header_link">React</a>
-        </li>
-      </ul>
+      <div class="header__container">
+        <nav class="nav-bar">
+          <div class="links__logo">
+            <a href="index.html"
+              ><img
+                src="assets/images/kotik.svg"
+                alt="logo"
+                class="header__logo"
+                width="80"
+            /></a>
+          </div>
+          <ul class="menu">
+            <li class="links__chapter links__chapter_html">
+              <a href="redirect_html.html" class="header_link">HTML</a>
+            </li>
+            <li class="links__chapter links__chapter_css">
+              <a href="redirect_css.html" class="header_link">CSS</a>
+            </li>
+            <li class="links__chapter links__chapter_js">
+              <a href="redirect_js.html" class="header_link">JavaScript</a>
+            </li>
+            <li class="links__chapter links__chapter_react">
+              <a href="redirect_react.html" class="header_link">React</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section class="container tasks-list">

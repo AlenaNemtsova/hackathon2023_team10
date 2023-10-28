@@ -13,8 +13,21 @@ body {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0 20px;
 }
+
+.header__container {
+  padding: 0 20px;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+}
+
+// .menu {
+// }
 
 .main {
   background-color: $main-blue-color;
@@ -40,7 +53,7 @@ body {
   background-color: $dark-blue-color;
   color: $accent-blue-color;
   &:hover {
-    border-bottom: 2px solid $yellow-color;
+    border-bottom-color: $yellow-color;
     color: $white-color;
   }
 }
@@ -88,4 +101,12 @@ body {
 .question,
 .task {
   margin-top: 20px;
+}
+
+.collab {
+  padding: 20px;
+
+  a {
+    margin-right: 20px;
+  }
 }
