@@ -25,6 +25,34 @@ body {
   padding: 0 12px;
 }
 
+.main {
+  background-color: rgb(29, 36, 52);
+  color: rgb(255, 255, 255);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.greeting__header {
+  color: rgb(0, 210, 233);
+}
+
+.greeting__paragraph {
+  margin-top: 30px;
+  margin-right: 100px;
+  width: 600px;
+}
+
+.startbutton {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid rgb(229, 231, 235);
+  background-color: rgb(22, 29, 41);
+  color: rgb(0, 210, 233);
+}
+.startbutton:hover {
+  border-bottom: 2px solid rgb(255, 201, 79);
+}
+
 .header {
   width: 100%;
   background-color: rgb(22, 29, 41);
@@ -54,38 +82,9 @@ body {
 
 .header_link:hover {
   color: rgb(229, 231, 235);
+  border-bottom: 2px solid rgb(255, 201, 79);
 }
 
 .header_logo:hover {
   background-color: rgb(229, 231, 235);
-}
-
-/*# sourceMappingURL=main.css.map */
-
-.main {
-  background-color: rgb(29, 36, 52);
-  color: rgb(255, 255, 255);
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-.greeting__header {
-  color: rgb(0, 210, 233);
-}
-
-.greeting__paragraph {
-  margin-top: 30px;
-  margin-right: 100px;
-  width: 600px;
-}
-
-.startbutton {
-  margin-top: 20px;
-  padding: 20px;
-  border: 1px solid rgb(229, 231, 235);
-  background-color: rgb(22, 29, 41);
-  color: rgb(0, 210, 233);
-}
-.startbutton:hover {
-  border-bottom: 2px solid rgb(255, 201, 79);
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
