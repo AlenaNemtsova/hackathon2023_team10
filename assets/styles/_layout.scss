@@ -1,1 +1,19 @@
 //общий стиль для всех страниц, контейнеры
+
+body {
+  font-family: "Fira Code", monospace;
+}
+
+//делает все блоки сайта флексом и выравнивает
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+//класс общего контейнера, блоки оборачивать в него
+.container {
+  max-width: 1440 px;
+  margin: 0 auto;
+  padding: 0 12px;
+}

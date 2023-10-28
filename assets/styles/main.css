@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap");
 html {
   box-sizing: border-box;
 }
@@ -6,4 +7,20 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1440 px;
+  margin: 0 auto;
+  padding: 0 12px;
 }/*# sourceMappingURL=main.css.map */
