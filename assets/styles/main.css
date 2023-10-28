@@ -25,7 +25,46 @@ body {
   padding: 0 12px;
 }
 
+
+.header {
+  width: 100%;
+  background-color: rgb(22, 29, 41);
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  color: rgb(160, 170, 190);
+}
+
+.header_logo {
+  width: 15%;
+  background-color: rgb(160, 170, 190);
+}
+
+.header_link {
+  margin-left: 40px;
+  margin-right: 40px;
+  color: rgb(160, 170, 190);
+  font-family: "Fira Code";
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header_link:hover {
+  color: rgb(229, 231, 235);
+}
+
+.header_logo:hover {
+  background-color: rgb(229, 231, 235);
+}
+
+/*# sourceMappingURL=main.css.map */
+
 .main {
   background-color: rgb(29, 36, 52);
   color: rgb(255, 255, 255);
 }/*# sourceMappingURL=main.css.map */
+

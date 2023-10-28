@@ -1,0 +1,49 @@
+.header {
+    
+    width: 100%;
+
+    background-color: $dark-blue-color;
+    
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: left;
+    align-items: center;
+
+    color: $grey-color;
+    
+}
+
+.header_logo {
+    width: 15%;
+
+    background-color:  $grey-color;
+}
+
+.header_link {
+
+    margin-left: 40px;
+    margin-right: 40px;
+
+    color: $grey-color;
+    
+    font-family: 'Fira Code';
+    font-weight: 700;
+    
+    text-decoration: none;
+}
+
+.header_link:hover {
+
+    color: $light-blue-color;
+
+}
+
+.header_logo:hover {
+
+    background-color: $light-blue-color;
+}
+
