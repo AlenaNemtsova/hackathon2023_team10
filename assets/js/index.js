@@ -1,4 +1,6 @@
 const button = document.querySelector(".startbutton");
+const interview = document.querySelector(".interview-item");
+
 const questionsHTML = [
   `<details><summary>Что такое валидация?</summary><p>Это проверка кода на соответствие правилам</p></details>`,
   `<details><summary>Какой тег мы используем для создания меню?</summary><p>Тег nav</p></details>`,
@@ -93,6 +95,6 @@ function startInterview() {
   const divForQuestions = document.createElement("div");
   divForQuestions.innerHTML = `${getRandomQuestionHTML()}<br>${getRandomQuestionCSS()}<br>${getRandomQuestionJS()}<br>${getRandomQuestionReact()}`;
 
-  document.body.append(divForQuestions);
+  interview.append(divForQuestions);
 }
 button.addEventListener("click", startInterview);

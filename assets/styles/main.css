@@ -53,6 +53,15 @@ body {
   border-bottom: 2px solid rgb(255, 201, 79);
 }
 
+.interview {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.interview-item details {
+  margin-top: 15px;
+}
+
 .header {
   width: 100%;
   background-color: rgb(22, 29, 41);
