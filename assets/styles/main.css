@@ -20,10 +20,11 @@ body {
 }
 
 .container {
-  max-width: 1440 px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 12px;
 }
+
 
 .header {
   width: 100%;
@@ -61,3 +62,9 @@ body {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.main {
+  background-color: rgb(29, 36, 52);
+  color: rgb(255, 255, 255);
+}/*# sourceMappingURL=main.css.map */
+
