@@ -56,3 +56,21 @@ body {
     margin-top: 15px;
   }
 }
+
+.redirect {
+  height: 100vh;
+  background-color: $light-blue-color;
+
+  &__questions,
+  &__tasks {
+    margin-top: 20px;
+    margin-left: 100px;
+    padding: 20px;
+    border: 1px solid $light-blue-color;
+    background-color: $dark-blue-color;
+    color: $accent-blue-color;
+    &:hover {
+      border-bottom: 2px solid $yellow-color;
+    }
+  }
+}
