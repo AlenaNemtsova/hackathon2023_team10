@@ -1,18 +1,63 @@
-/* Error: expected "}".
- *    ,
- * 62 |   }
- *    |    ^
- *    '
- *   hackathon2023\hackathon2023_team10\assets\styles\_footer.scss 62:4  @import
- *   hackathon2023\hackathon2023_team10\assets\styles\main.scss 15:9     root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "}".\a    \2577 \a 62 \2502    }\d\a    \2502     ^\a    \2575 \a   hackathon2023\\hackathon2023_team10\\assets\\styles\\_footer.scss 62:4  @import\a   hackathon2023\\hackathon2023_team10\\assets\\styles\\main.scss 15:9     root stylesheet';
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap");
+html {
+  box-sizing: border-box;
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1440 px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.header {
+  width: 100%;
+  background-color: rgb(22, 29, 41);
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  color: rgb(160, 170, 190);
+}
+
+.header_logo {
+  width: 15%;
+  background-color: rgb(160, 170, 190);
+}
+
+.header_link {
+  margin-left: 40px;
+  margin-right: 40px;
+  color: rgb(160, 170, 190);
+  font-family: "Fira Code";
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header_link:hover {
+  color: rgb(229, 231, 235);
+}
+
+.header_logo:hover {
+  background-color: rgb(229, 231, 235);
+}
+
+/*# sourceMappingURL=main.css.map */
