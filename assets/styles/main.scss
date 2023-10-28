@@ -1,2 +1,12 @@
 @import "base.scss";
 @import "layout.scss";
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap");
+
+$main-blue-color: rgb(29, 36, 52); //общий фон, фон при hover
+$dark-blue-color: rgb(22, 29, 41); // фон хэдера и футера
+$light-blue-color: rgb(229, 231, 235); //обводка бордеров
+$yellow-color: rgb(255, 201, 79); //подчеркивание hover
+
+$white-color: rgb(255, 255, 255); //основной текст, цвет текста при hover
+$accent-blue-color: rgb(0, 210, 233); //акцентный синий текст
+$grey-color: rgb(160, 170, 190); //второстепенный текст
