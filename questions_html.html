@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
     <title>Document</title>
   </head>
 
@@ -30,93 +32,116 @@
     </header>
 
     <main>
+      <div class="question">
+        <p class="question__description">Что такое валидация?</p>
+        <details class="answer">
+          <summary class="answer__check">Посмотреть ответ</summary>
+          <p class="answer__text">
+            Это проверка кода на соответствие правилам.
+          </p>
+        </details>
+      </div>
 
-        <div class="question">
-            <p class="question__description">Что такое валидация?</p>
-            <details class="answer">
-                <summary class="answer__check">Посмотреть ответ</summary>
-                <p class="answer__text">Это проверка кода на соответствие правилам.</p>
-            </details>
-        </div>
+      <div class="question">
+        <p class="question__description">
+          Какой спецсимвол используется для указания знака &copy;?
+        </p>
+        <details class="answer">
+          <summary class="answer__check">Посмотреть ответ</summary>
+          <p class="answer__text">&copy</p>
+        </details>
+      </div>
 
-        <div class="question">
-            <p class="question__description">Какой спецсимвол используется для указания знака &copy;?</p>
-            <details class="answer">
-                <summary class="answer__check">Посмотреть ответ</summary>
-                <p class="answer__text">&copy</p>
-            </details>
-        </div>
+      <div class="question">
+        <p class="question__description">
+          Какой тег мы используем для создания меню?
+        </p>
+        <details class="answer">
+          <summary class="answer__check">Посмотреть ответ</summary>
+          <p class="answer__text">Тег nav.</p>
+        </details>
+      </div>
 
-        <div class="question">
-            <p class="question__description">Какой тег мы используем для создания меню?</p>
-            <details class="answer">
-                <summary class="answer__check">Посмотреть ответ</summary>
-                <p class="answer__text">Тег nav.</p>
-            </details>
-        </div>
+      <div class="question">
+        <p class="question__description">
+          Чем плохо использовать div для всего?
+        </p>
+        <details class="answer">
+          <summary class="answer__check">Посмотреть ответ</summary>
+          <p class="answer__text">
+            Если использовать один и тот же тег для всего, то автоматическим
+            анализаторам страниц будет невозможно разобраться где что. Т.е.
+            ридеры не смогут правильно прочитать страницу, а поисковые системы
+            не смогут правильно её проиндексировать.
+          </p>
+        </details>
+      </div>
 
-        <div class="question">
-            <p class="question__description">Чем плохо использовать div для всего?</p>
-            <details class="answer">
-                <summary class="answer__check">Посмотреть ответ</summary>
-                <p class="answer__text">Если использовать один и тот же тег для всего, то автоматическим анализаторам
-                    страниц будет невозможно разобраться где что. Т.е. ридеры не смогут правильно прочитать страницу, а
-                    поисковые системы не смогут правильно её проиндексировать.</p>
-            </details>
-        </div>
+      <div class="question">
+        <p class="question__description">
+          Какой атрибут выключает звук при воспроизведении видеофайла?
+        </p>
+        <details class="answer">
+          <summary class="answer__check">Посмотреть ответ</summary>
+          <p class="answer__text">muted.</p>
+        </details>
+      </div>
 
-        <div class="question">
-            <p class="question__description">Какой атрибут выключает звук при воспроизведении видеофайла?</p>
-            <details class="answer">
-                <summary class="answer__check">Посмотреть ответ</summary>
-                <p class="answer__text">muted.</p>
-            </details>
-        </div>
+      <div class="question">
+        <p class="question__description">
+          Как сделать блок радиокнопок, чтобы выбирался только один пункт?
+        </p>
+        <details class="answer">
+          <summary class="answer__check">Посмотреть ответ</summary>
+          <p class="answer__text">
+            Для этого используется атрибут name в теге input с типом radio. Все
+            радиокнопки с одним и тем же name будут объединены в одну группу,
+            внутри которой можно выбирать только одну кнопку.
+          </p>
+        </details>
+      </div>
 
-        <div class="question">
-            <p class="question__description">Как сделать блок радиокнопок, чтобы выбирался только один пункт?</p>
-            <details class="answer">
-                <summary class="answer__check">Посмотреть ответ</summary>
-                <p class="answer__text">Для этого используется атрибут name в теге input с типом radio. Все радиокнопки
-                    с одним и тем же name будут объединены в одну группу, внутри которой можно выбирать только одну
-                    кнопку.</p>
-            </details>
-        </div>
+      <div class="question">
+        <p class="question__description">
+          Каким тегом можно сделать поле ввода даты?
+        </p>
+        <details class="answer">
+          <summary class="answer__check">Посмотреть ответ</summary>
+          <p class="answer__text">input с type=date.</p>
+        </details>
+      </div>
 
-        <div class="question">
-            <p class="question__description">Каким тегом можно сделать поле ввода даты?</p>
-            <details class="answer">
-                <summary class="answer__check">Посмотреть ответ</summary>
-                <p class="answer__text">input с type=date.</p>
-            </details>
-        </div>
+      <div class="question">
+        <p class="question__description">
+          Как определяется, какой именно пункт будет выбран по умолчанию в
+          выпадающем списке?
+        </p>
+        <details class="answer">
+          <summary class="answer__check">Посмотреть ответ</summary>
+          <p class="answer__text">С помощью атрибута selected="selected".</p>
+        </details>
+      </div>
 
-        <div class="question">
-            <p class="question__description">Как определяется, какой именно пункт будет выбран по умолчанию в выпадающем
-                списке?</p>
-            <details class="answer">
-                <summary class="answer__check">Посмотреть ответ</summary>
-                <p class="answer__text">С помощью атрибута selected="selected".</p>
-            </details>
-        </div>
+      <div class="question">
+        <p class="question__description">Что такое хорошая разметка?</p>
+        <details class="answer">
+          <summary class="answer__check">Посмотреть ответ</summary>
+          <p class="answer__text">
+            Хорошая разметка ясная, понятная, без лишних тегов и обязательно
+            проходит проверку на валидаторе.
+          </p>
+        </details>
+      </div>
 
-        <div class="question">
-            <p class="question__description">Что такое хорошая разметка?</p>
-            <details class="answer">
-                <summary class="answer__check">Посмотреть ответ</summary>
-                <p class="answer__text">Хорошая разметка ясная, понятная, без лишних тегов и обязательно проходит
-                    проверку на валидаторе.</p>
-            </details>
-        </div>
-
-        <div class="question">
-            <p class="question__description">Назовите список тегов, которые нежелательно использовать</p>
-            <details class="answer">
-                <summary class="answer__check">Посмотреть ответ</summary>
-                <p class="answer__text">b, i, big, small, hr, u, center, font.</p>
-            </details>
-        </div>
-
+      <div class="question">
+        <p class="question__description">
+          Назовите список тегов, которые нежелательно использовать
+        </p>
+        <details class="answer">
+          <summary class="answer__check">Посмотреть ответ</summary>
+          <p class="answer__text">b, i, big, small, hr, u, center, font.</p>
+        </details>
+      </div>
     </main>
   </body>
 </html>
