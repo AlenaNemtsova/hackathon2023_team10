@@ -9,6 +9,10 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Fira Code", monospace;
 }
@@ -51,14 +55,14 @@ body {
 }
 .startbutton:hover {
   border-bottom: 2px solid rgb(255, 201, 79);
+  color: rgb(255, 255, 255);
 }
 
 .interview {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-
-.interview-item details {
+.interview__item details {
   margin-top: 15px;
 }
 
@@ -67,15 +71,31 @@ body {
   background-color: rgb(229, 231, 235);
 }
 .redirect__questions, .redirect__tasks {
-  margin-top: 20px;
-  margin-left: 100px;
-  padding: 20px;
+  margin-top: 50px;
+  padding: 20px 40px;
   border: 1px solid rgb(229, 231, 235);
   background-color: rgb(22, 29, 41);
   color: rgb(0, 210, 233);
 }
 .redirect__questions:hover, .redirect__tasks:hover {
   border-bottom: 2px solid rgb(255, 201, 79);
+  color: rgb(255, 255, 255);
+}
+
+.questions-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.tasks-list {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.question,
+.task {
+  margin-top: 20px;
 }
 
 .header {

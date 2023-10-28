@@ -10,6 +10,10 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 //переменные
 $main-blue-color: rgb(29, 36, 52); //общий фон, фон при hover
 $dark-blue-color: rgb(22, 29, 41); // фон хэдера и футера

@@ -4,14 +4,12 @@ body {
   font-family: "Fira Code", monospace;
 }
 
-//делает все блоки сайта флексом и выравнивает
 .wrapper {
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
 
-//класс общего контейнера, блоки оборачивать в него
 .container {
   max-width: 1000px;
   margin: 0 auto;
@@ -43,17 +41,18 @@ body {
   color: $accent-blue-color;
   &:hover {
     border-bottom: 2px solid $yellow-color;
+    color: $white-color;
   }
 }
 
 .interview {
   padding-top: 40px;
   padding-bottom: 40px;
-}
 
-.interview-item {
-  details {
-    margin-top: 15px;
+  &__item {
+    details {
+      margin-top: 15px;
+    }
   }
 }
 
@@ -63,14 +62,30 @@ body {
 
   &__questions,
   &__tasks {
-    margin-top: 20px;
-    margin-left: 100px;
-    padding: 20px;
+    margin-top: 50px;
+    padding: 20px 40px;
     border: 1px solid $light-blue-color;
     background-color: $dark-blue-color;
     color: $accent-blue-color;
     &:hover {
       border-bottom: 2px solid $yellow-color;
+      color: $white-color;
     }
   }
+}
+
+.questions-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.tasks-list {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.question,
+.task {
+  margin-top: 20px;
 }
