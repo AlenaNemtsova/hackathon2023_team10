@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/normalize.css" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
     <title>Document</title>
   </head>
 
@@ -30,58 +32,79 @@
     </header>
 
     <main>
+      <div class="question">
+        <p class="question__description">
+          Почему в большинстве ситуаций стоит использовать
+          flexbox-позиционирование?
+        </p>
+        <details class="answer">
+          <summary class="answer__check">Посмотреть ответ</summary>
+          <p class="answer__text">
+            Такое позиционирование обеспечивает максимально гибкую верстку,
+            способную автоматически подстраиваться под изменение размера экрана
+            у пользователя.
+          </p>
+        </details>
+      </div>
 
-        <div class="question">
-            <p class="question__description">Почему в большинстве ситуаций стоит использовать flexbox-позиционирование?
-            </p>
-            <details class="answer">
-                <summary class="answer__check">Посмотреть ответ</summary>
-                <p class="answer__text">Такое позиционирование обеспечивает максимально гибкую верстку, способную
-                    автоматически подстраиваться под изменение размера экрана у пользователя.</p>
-            </details>
-        </div>
+      <div class="question">
+        <p class="question__description">
+          Какие есть оси во флекс-вёрстке и как задаётся их направление?
+        </p>
+        <details class="answer">
+          <summary class="answer__check">Посмотреть ответ</summary>
+          <p class="answer__text">
+            Главная ось и поперечная ось. По умолчанию главная ось
+            справа-налево, поперечная сверху-вниз. Направление главной оси
+            задается свойством flex-direction. Row (по умолчанию) слева направо,
+            row-reverse - справа-налево, column - сверху вниз и в этом случае
+            поперечная ось будет уже слева направо. Column-reverse - снизу
+            вверх.
+          </p>
+        </details>
+      </div>
 
-        <div class="question">
-            <p class="question__description">Какие есть оси во флекс-вёрстке и как задаётся их направление?</p>
-            <details class="answer">
-                <summary class="answer__check">Посмотреть ответ</summary>
-                <p class="answer__text">Главная ось и поперечная ось. По умолчанию главная ось справа-налево, поперечная
-                    сверху-вниз. Направление главной оси задается свойством flex-direction.
-                    Row (по умолчанию) слева направо, row-reverse - справа-налево, column - сверху вниз и в этом случае
-                    поперечная ось будет уже слева направо. Column-reverse - снизу вверх.</p>
-            </details>
-        </div>
+      <div class="question">
+        <p class="question__description">
+          Как работает свойство margin: auto во флекс-вёрстке?
+        </p>
+        <details class="answer">
+          <summary class="answer__check">Посмотреть ответ</summary>
+          <p class="answer__text">
+            auto поровну распределяет пространство между правым и левым
+            отступами. Т.е. может использоваться для центрирования элемента. Не
+            работает для float, строчных и абсолютно позиционированных
+            элементов. Так же не работает, если не задана ширина. auto для
+            верхнего и нижнего оступов равно 0px.
+          </p>
+        </details>
+      </div>
 
-        <div class="question">
-            <p class="question__description">Как работает свойство margin: auto во флекс-вёрстке?</p>
-            <details class="answer">
-                <summary class="answer__check">Посмотреть ответ</summary>
-                <p class="answer__text">auto поровну распределяет пространство между правым и левым отступами. Т.е.
-                    может использоваться для центрирования элемента. Не работает для float, строчных и
-                    абсолютно позиционированных элементов. Так же не работает, если не задана ширина.
-                    auto для верхнего и нижнего оступов равно 0px.</p>
-            </details>
-        </div>
+      <div class="question">
+        <p class="question__description">В чем преимущества box-sizing?</p>
+        <details class="answer">
+          <summary class="answer__check">Посмотреть ответ</summary>
+          <p class="answer__text">
+            В том, что облегчается расчет внешних границ контейнера. Точнее, их
+            можно точно задавать, а размер содержимого будет высчитываться,
+            исходя из размеров бокса, отступов и рамки.
+          </p>
+        </details>
+      </div>
 
-        <div class="question">
-            <p class="question__description">В чем преимущества box-sizing?</p>
-            <details class="answer">
-                <summary class="answer__check">Посмотреть ответ</summary>
-                <p class="answer__text"> В том, что облегчается расчет внешних границ контейнера. Точнее, их можно точно
-                    задавать, а размер содержимого будет высчитываться, исходя из размеров бокса, отступов и рамки.</p>
-            </details>
-        </div>
-
-        <div class="question">
-            <p class="question__description">Чем отличается flex-grow от flex-shrink?</p>
-            <details class="answer">
-                <summary class="answer__check">Посмотреть ответ</summary>
-                <p class="answer__text"> Flex-grow определяет степень того, насколько элемент будет расширяться при
-                    возможности для расширения. Flex-shink определяет, насколько элемент НЕ будет сжиматься при общем
-                    сжатии поля показа.</p>
-            </details>
-        </div>
-
+      <div class="question">
+        <p class="question__description">
+          Чем отличается flex-grow от flex-shrink?
+        </p>
+        <details class="answer">
+          <summary class="answer__check">Посмотреть ответ</summary>
+          <p class="answer__text">
+            Flex-grow определяет степень того, насколько элемент будет
+            расширяться при возможности для расширения. Flex-shink определяет,
+            насколько элемент НЕ будет сжиматься при общем сжатии поля показа.
+          </p>
+        </details>
+      </div>
     </main>
   </body>
 </html>
