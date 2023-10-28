@@ -10,3 +10,6 @@ $yellow-color: rgb(255, 201, 79); //подчеркивание hover
 $white-color: rgb(255, 255, 255); //основной текст, цвет текста при hover
 $accent-blue-color: rgb(0, 210, 233); //акцентный синий текст
 $grey-color: rgb(160, 170, 190); //второстепенный текст
+
+@import "_header.scss";
+@import "_footer.scss";

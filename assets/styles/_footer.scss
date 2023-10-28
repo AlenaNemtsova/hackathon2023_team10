@@ -1,0 +1,64 @@
+$textcolor:#FFF;
+$font:'Tilda Sans';
+$color:#161D29;
+
+
+
+footer {
+  flex-basis:2.77%;
+  background-color:$color;
+
+  .footer__container{
+  width:90%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 2rem 3rem 3rem 3rem;
+  @media (max-width:720px){
+    .footer__container{
+      width:600px;
+    flex-direction:column;
+    padding:10px 0;
+  }
+}
+
+  .footer__logo{
+    align-self: center;
+  }
+   .footer__img {
+      width:6rem;
+    }
+  
+
+.footer__nav{
+    width: 80%;
+    height: 10%;
+    position: fixed;
+    overflow: hidden;
+  ul{ 
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 70%;
+       li{
+               a{
+                  text-decoration: none;
+                }
+  }
+}
+
+
+.footer__item{
+    list-style: none;}
+
+.footer__link{
+    display: block;
+    color:$textcolor;
+    font-family:$font;
+    text-align:center;
+    width: 3rem;
+    margin-left: 90px;
+  }
+
+

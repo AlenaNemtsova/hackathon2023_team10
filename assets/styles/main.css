@@ -1,26 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap");
-html {
-  box-sizing: border-box;
-}
+/* Error: expected "}".
+ *    ,
+ * 62 |   }
+ *    |    ^
+ *    '
+ *   hackathon2023\hackathon2023_team10\assets\styles\_footer.scss 62:4  @import
+ *   hackathon2023\hackathon2023_team10\assets\styles\main.scss 15:9     root stylesheet */
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "}".\a    \2577 \a 62 \2502    }\d\a    \2502     ^\a    \2575 \a   hackathon2023\\hackathon2023_team10\\assets\\styles\\_footer.scss 62:4  @import\a   hackathon2023\\hackathon2023_team10\\assets\\styles\\main.scss 15:9     root stylesheet';
 }
-
-body {
-  font-family: "Fira Code", monospace;
-}
-
-.wrapper {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.container {
-  max-width: 1440 px;
-  margin: 0 auto;
-  padding: 0 12px;
-}/*# sourceMappingURL=main.css.map */
