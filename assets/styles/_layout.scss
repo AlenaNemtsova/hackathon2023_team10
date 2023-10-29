@@ -1,13 +1,20 @@
 //общий стиль для всех страниц, контейнеры
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: "Fira Code", monospace;
+  background-color: $main-blue-color;
 }
 
 .wrapper {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 .container {
@@ -30,6 +37,7 @@ body {
 // }
 
 .main {
+  flex: 1 0 auto;
   background-color: $main-blue-color;
   color: $white-color;
   padding-top: 40px;
@@ -70,9 +78,6 @@ body {
 }
 
 .redirect {
-  height: 100vh;
-  background-color: $light-blue-color;
-
   &__questions,
   &__tasks {
     margin-top: 50px;
@@ -81,7 +86,7 @@ body {
     background-color: $dark-blue-color;
     color: $accent-blue-color;
     &:hover {
-      border-bottom: 2px solid $yellow-color;
+      border-bottom-color: $yellow-color;
       color: $white-color;
     }
   }

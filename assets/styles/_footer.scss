@@ -1,0 +1,81 @@
+$textcolor: #fff;
+$font: "Tilda Sans";
+$color: #161d29;
+
+.footer {
+  flex: 0 0 auto;
+  background-color: $color;
+  color: #fff;
+
+  &__container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 2rem 3rem 3rem 3rem;
+
+    @media (max-width: 720px) {
+      width: 600px;
+      flex-direction: column;
+      padding: 10px 0;
+    }
+
+    &__logo {
+      align-self: center;
+    }
+
+    &__img {
+      width: 6rem;
+    }
+
+    &__nav {
+      width: 80%;
+      height: 10%;
+
+      @media (max-width: 769px) {
+        flex-direction: column;
+        padding: 0;
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        width: 70%;
+      }
+    }
+
+    &__item {
+      list-style: none;
+    }
+
+    &__link {
+      display: block;
+      color: $textcolor;
+      font-family: $font;
+      text-align: center;
+      width: 3rem;
+      margin-left: 90px;
+
+      @media (max-width: 769px) {
+        display: block;
+        padding: 10px 0;
+      }
+    }
+
+    .footer__icon {
+      display: inline-block;
+    }
+
+    &__icon {
+      flex-direction: column;
+
+      @media (max-width: 769px) {
+        flex-direction: column;
+        padding: 0;
+      }
+    }
+  }
+}

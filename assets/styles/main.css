@@ -13,14 +13,21 @@ a {
   text-decoration: none;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: "Fira Code", monospace;
+  background-color: rgb(29, 36, 52);
 }
 
 .wrapper {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
 
 .container {
@@ -41,6 +48,7 @@ body {
 }
 
 .main {
+  flex: 1 0 auto;
   background-color: rgb(29, 36, 52);
   color: rgb(255, 255, 255);
   padding-top: 40px;
@@ -77,10 +85,6 @@ body {
   margin-top: 15px;
 }
 
-.redirect {
-  height: 100vh;
-  background-color: rgb(229, 231, 235);
-}
 .redirect__questions, .redirect__tasks {
   margin-top: 50px;
   padding: 20px 40px;
@@ -89,7 +93,7 @@ body {
   color: rgb(0, 210, 233);
 }
 .redirect__questions:hover, .redirect__tasks:hover {
-  border-bottom: 2px solid rgb(255, 201, 79);
+  border-bottom-color: rgb(255, 201, 79);
   color: rgb(255, 255, 255);
 }
 
@@ -118,6 +122,7 @@ body {
 
 .header {
   width: 100%;
+  flex: 0 0 auto;
   background-color: rgb(22, 29, 41);
   border-bottom: 1px solid rgb(45, 59, 86);
 }
@@ -142,4 +147,77 @@ body {
 .header_link:hover {
   color: rgb(229, 231, 235);
   border-bottom: 2px solid rgb(255, 201, 79);
+}
+
+.footer {
+  flex: 0 0 auto;
+  background-color: #161d29;
+  color: #fff;
+}
+.footer__container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  padding: 2rem 3rem 3rem 3rem;
+}
+@media (max-width: 720px) {
+  .footer__container {
+    width: 600px;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+}
+.footer__container__logo {
+  align-self: center;
+}
+.footer__container__img {
+  width: 6rem;
+}
+.footer__container__nav {
+  width: 80%;
+  height: 10%;
+}
+@media (max-width: 769px) {
+  .footer__container__nav {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+.footer__container__nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 70%;
+}
+.footer__container__item {
+  list-style: none;
+}
+.footer__container__link {
+  display: block;
+  color: #fff;
+  font-family: "Tilda Sans";
+  text-align: center;
+  width: 3rem;
+  margin-left: 90px;
+}
+@media (max-width: 769px) {
+  .footer__container__link {
+    display: block;
+    padding: 10px 0;
+  }
+}
+.footer__container .footer__icon {
+  display: inline-block;
+}
+.footer__container__icon {
+  flex-direction: column;
+}
+@media (max-width: 769px) {
+  .footer__container__icon {
+    flex-direction: column;
+    padding: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
