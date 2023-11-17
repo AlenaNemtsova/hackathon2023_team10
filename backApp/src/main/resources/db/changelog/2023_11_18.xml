@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet id="init db" author="postgres">
+        <sql>
+            Create table if not exists question (
+            id bigserial PRIMARY KEY,
+            name varchar NOT NULL
+            );
+
+            Create table if not exists answer (
+            id bigserial PRIMARY KEY,
+            name varchar NOT NULL,
+            correct boolean NOT NULL,
+            question_id bigint NOT NULL,
+            FOREIGN KEY (question_id) REFERENCES question (id)
+            );
+
+            Create table if not exists task (
+            id bigserial PRIMARY KEY,
+            name varchar NOT NULL,
+            description text NOT NULL
+            );
+
+            Create table if not exists solution (
+            id bigserial PRIMARY KEY,
+            description text NOT NULL,
+            task_id bigint NOT NULL,
+            FOREIGN KEY (task_id) REFERENCES task (id)
+            );
+
+            INSERT INTO question (name)
+            VALUES
+            ('Какой HTML-тег используется для создания ссылки?'),
+            ('Какой тег используется для создания таблицы в HTML?'),
+            ('Как правильно задать заголовок для HTML-страницы?'),
+            ('Какой тег используется для создания списка с нумерованными элементами?'),
+            ('Как создать абзац текста в HTML?'),
+            ('Что такое HTML?'),
+            ('Какой тег используется для создания жирного текста в HTML?'),
+            ('Как правильно закрыть тег в HTML?'),
+            ('Какой тег используется для создания изображения в HTML?'),
+            ('Что такое атрибут в HTML?');
+
+            INSERT INTO answer (name, correct, question_id)
+            VALUES
+            ('&lt;a&gt;', true, 1),
+            ('&lt;link&gt;', false, 1),
+            ('&lt;href&gt;', false, 1),
+
+            ('&lt;table&gt;', true, 2),
+            ('&lt;tab&gt;', false, 2),
+            ('&lt;tr&gt;', false, 2),
+
+            ('&lt;title&gt;', true, 3),
+            ('&lt;head&gt;', false, 3),
+            ('&lt;h1&gt;', false, 3),
+
+            ('&lt;ul&gt;', true, 4),
+            ('&lt;ol&gt;', false, 4),
+            ('&lt;li&gt;', false, 4),
+
+            ('&lt;p&gt;', true, 5),
+            ('&lt;paragraph&gt;', false, 5),
+            ('&lt;para&gt;', false, 5),
+
+            ('Hyper Text Markup Language', true, 6),
+            ('Hyperlinks and Text Markup Language', false, 6),
+            ('High Text Markup Language', false, 6),
+
+            ('&lt;b&gt;', true, 7),
+            ('&lt;bold&gt;', false, 7),
+            ('&lt;strong&gt;', false, 7),
+
+            ('&lt;&gt;', true, 8),
+            ('&lt;/&gt;', false, 8),
+            ('&lt;/tag&gt;', false, 8),
+
+            ('&lt;img&gt;', true, 9),
+            ('&lt;image&gt;', false, 9),
+            ('&lt;picture&gt;', false, 9),
+
+            ('Описание элемента или атрибута', true, 10),
+            ('Текст элемента', false, 10),
+            ('Цвет текста', false, 10);
+
+            INSERT INTO task (name, description)
+            VALUES
+            ('Задача 1 по HTML', 'Напишите код для создания таблицы в HTML.'),
+            ('Задача 2 по HTML', 'Создайте список с нумерованными элементами в HTML.'),
+            ('Задача 3 по HTML', 'Добавьте заголовок и мета-теги в HTML-страницу.'),
+            ('Задача 4 по HTML', 'Создайте ссылку на другую HTML-страницу.'),
+            ('Задача 5 по HTML', 'Добавьте изображение на HTML-страницу.'),
+            ('Задача 6 по HTML', 'Создайте абзац текста в HTML.'),
+            ('Задача 7 по HTML', 'Создайте список с маркированными элементами в HTML.'),
+            ('Задача 8 по HTML', 'Добавьте таблицу с несколькими ячейками в HTML.'),
+            ('Задача 9 по HTML', 'Вставьте видео на HTML-страницу.'),
+            ('Задача 10 по HTML', 'Создайте форму для ввода данных на HTML-странице.');
+
+            INSERT INTO solution (description, task_id)
+            VALUES
+            ('&lt;table&gt;...&lt;/table&gt;', 1),
+            ('&lt;ol&gt;...&lt;/ol&gt;', 2),
+            ('&lt;head&gt;&lt;title&gt;...&lt;/title&gt;&lt;/head&gt;', 3),
+            ('&lt;a href="other_page.html"&gt;...&lt;/a&gt;', 4),
+            ('&lt;img src="image.jpg" alt="Description"&gt;', 5),
+            ('&lt;p&gt;...&lt;/p&gt;', 6),
+            ('&lt;ul&gt;...&lt;/ul&gt;', 7),
+            ('&lt;table&gt;&lt;tr&gt;&lt;td&gt;...&lt;/td&gt;&lt;td&gt;...&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;', 8),
+            ('&lt;video src="video.mp4" controls&gt;&lt;/video&gt;', 9),
+            ('&lt;form action="submit.php" method="post"&gt;&lt;input type="text" name="name"&gt;&lt;input type="submit" value="Submit"&gt;&lt;/form&gt;', 10);
+
+
+
+        </sql>
+    </changeSet>
+</databaseChangeLog>
