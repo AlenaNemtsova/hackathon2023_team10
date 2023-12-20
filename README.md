@@ -8,7 +8,7 @@
 
 Участницы проекта:
 * [Super_gir1](https://github.com/irinabukhaeva)
-* [anastasiadergaeva](https://github.com/irinabukhaeva](https://github.com/anastasiadergaeva)https://github.com/anastasiadergaeva)
+* [anastasiadergaeva](https://github.com/anastasiadergaeva)
 * [Starostina Natalie](https://github.com/starostinanatalie)
 * [AlenaNemtsova](https://github.com/AlenaNemtsova)
 * [Elmira](https://github.com/ElmiraKopanitsa)
